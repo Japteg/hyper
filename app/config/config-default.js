@@ -5,7 +5,7 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 15,
 
     // font family with optional fallbacks
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
@@ -23,10 +23,10 @@ module.exports = {
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: '#000',
+    backgroundColor: 'rgba(0,0,255,.1)',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: 'yellowgreen',
 
     // custom css to embed in the main window
     css: '',
@@ -80,7 +80,7 @@ module.exports = {
     //
     // Powershell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '',
+    shell: '/bin/bash',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used

@@ -17,7 +17,7 @@ module.exports = class Window {
     const opts = Object.assign({
       minWidth: 370,
       minHeight: 190,
-      backgroundColor: toElectronBackgroundColor(cfg.backgroundColor || '#000'),
+      backgroundColor: toElectronBackgroundColor(cfg.backgroundColor || 'rgba(0,0,0,.4)'),
       titleBarStyle: 'hidden-inset',
       title: 'Hyper.app',
       // we want to go frameless on windows and linux
@@ -52,7 +52,7 @@ module.exports = class Window {
     });
 
     rpc.on('init', () => {
-      window.setBackgroundColor(toElectronBackgroundColor(cfg.backgroundColor || '#000'));
+      window.setBackgroundColor(toElectronBackgroundColor(cfg.backgroundColor || 'rgba(0,0,0,.2)'));
       window.show();
 
       // If no callback is passed to createWindow,
